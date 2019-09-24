@@ -1,4 +1,4 @@
-package com.justsystems.readablecode;
+package com.justsystems.readablecode.utils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

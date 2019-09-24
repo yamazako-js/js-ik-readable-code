@@ -1,9 +1,11 @@
-package com.justsystems.readablecode;
+package com.justsystems.readablecode.data;
+
+import com.justsystems.readablecode.utils.DataUtils;
 
 /**
  * 辞書の1単語を表すクラス
  */
-class Word {
+public class Word {
     /**
      * ID <br/>
      * value に対して一意に定まる
@@ -14,15 +16,15 @@ class Word {
      */
     private String value;
 
-    String getId() {
+    public String getId() {
         return id;
     }
 
-    String getValue() {
+    public String getValue() {
         return value;
     }
 
-    Word(String value) {
+    public Word(String value) {
         this.id = DataUtils.createHash_SHA512(value);
         this.value = value;
     }

@@ -1,4 +1,4 @@
-package com.justsystems.readablecode;
+package com.justsystems.readablecode.utils;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

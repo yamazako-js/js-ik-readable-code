@@ -1,6 +1,8 @@
 package com.justsystems.readablecode;
 
 
+import com.justsystems.readablecode.data.Word;
+import com.justsystems.readablecode.utils.ResourceUtil;
 
 public class Main {
 
