@@ -12,7 +12,10 @@ public class Main {
      */
     private void printHeading(String fileName) {
         String filePath = String.join("/", "data", fileName);
-        ResourceUtil.readWordsInfo(filePath).forEach(System.out::println);
+        ResourceUtil.readWordsInfo(filePath).forEach(wordStr -> {
+            Word word = new Word(wordStr);
+            System.out.println(word.getId() + ": " + word.getValue());
+        });
     }
 
 
